@@ -2,4 +2,8 @@
 
 #ylesanne kasutaja tervituseks
 kasutaja=`whoami`
-echo "Tere tulemast $kasutaja!"
+esi_taht=` whoami | cut -c1 | tr [a-z] [A-Z]`
+loputahed=`whoami | cut -c2-4`
+
+echo "Tere tulemast $esi_taht$loputahed!"
+ 
