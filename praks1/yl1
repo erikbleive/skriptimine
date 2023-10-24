@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#ylesanne kasutaja tervituseks
+kasutaja=`whoami`
+echo "Tere tulemast $kasutaja!"
