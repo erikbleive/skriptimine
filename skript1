@@ -10,3 +10,6 @@ echo -n "sinu praegune kataloog on: "
 pwd
 sleep 0.5
 echo "sinu arvuti ip aadress on: $ipa"
+
+sleep 1.5
+clear
