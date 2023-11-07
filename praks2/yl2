@@ -1,0 +1,39 @@
+#!/bin/bash
+
+
+#alustan õpet keskkonna ja kasutaja poolt loodud muutujatest
+echo "hetkene töölaud on:"
+pwd
+echo
+echo "sisse logitud kasutaja on:"
+whoami
+
+#näitab kasutaja home
+echo
+echo "kasutaja hetkene kodu on: $HOME"
+#nüüd kasutan $ sümbolit lauses, pane tähele kuidas käsk ei tööta
+
+# echo "mul on $1 taskus , käsk ei tööta
+echo
+echo "mul on \$1 taskus"
+
+#kasutaja muutujad
+
+klass=5
+inimene="Adam"
+echo
+echo "$inimene on tubli poiss, ta käib hetkel $klass klassis"
+
+#käsu vahendamine
+mydir=$(pwd)
+echo
+echo $mydir
+
+#alustan matemaatiliste lahendustega
+
+var1=$(( 5 + 5 ))
+echo 
+echo $var1
+var2=$(( $var1 * 2 ))
+echo
+echo $var2
