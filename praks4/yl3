@@ -1,0 +1,20 @@
+#!/bin/bash
+#kui valitakse nr.1 siis tootab skriptis sisestadud osa vaartus nr.1-le ehk eq1
+
+osch=0
+echo "1. Unix (Sun OS)"
+echo "2. Linux (Red Hat)"
+echo -n "Vali kas [1 or 2]?"
+read osch
+
+if [ $osch -eq 1 ] ; then
+	echo "You Pick up Unix (Sun Os)"
+else ### nested if i.e. if within if ######
+	if [ $osch -eq 2 ] ; then 
+		echo "You Pick up Linux (Red Hat)"
+	else
+		echo "What you dont like Unix/Linux OS."
+	fi
+fi
+#kui valitakse nr.2 siis tootab sisestatud osa vaartus nr.2-le  ehk eq2
+#kui valitakse valjaspool antud valitud number siis tuleb vastus  else vastusega
