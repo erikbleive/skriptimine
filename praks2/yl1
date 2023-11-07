@@ -1,0 +1,6 @@
+#!/bin/bash
+#loo skript mis valjastab kasutajale tervituse
+#skrip on loodud nii et selle kaivitamisel ta tervitab hetkest kasutajat. 
+kasutajanimi="$USER"
+echo  "tere, $kasutajanimi"
+echo !
