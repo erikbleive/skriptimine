@@ -1,0 +1,8 @@
+#!/bin/bash
+#kirjutan echoga lause 
+echo -n "sisesta oma ees- ja perenimi: "
+#read ootab et ma sisestaksin enda nime ja perenime
+	read eesnimi perenimi
+#nüüd kirjutan tervituse sellel kes kirjutab enda nime read alla
+echo "Tere tulemast,  $eesnimi $perenimi"
+
