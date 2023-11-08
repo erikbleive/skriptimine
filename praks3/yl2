@@ -1,0 +1,15 @@
+#!/bin/bash
+#aasta
+aasta=2016
+#president
+president="Kersti Kaljulaid"
+#lisan lause keskosa
+lause_keskosa="aastal valiti Eesti presidendiks"
+#lause moodustamine
+lause="$aasta $lause_keskosa $president"
+
+#nüüd lisan et skript väljastatakse
+
+echo $lause
+
+
