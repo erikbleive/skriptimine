@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#!/bin/bash
+
+# Kasutajalt sisendi küsimine
+read -p "Sisesta ainepunktide arv: " ainepunktid
+read -p "Sisesta nädalate arv: " nadalad
+
+# Ajakulu arvutamine
+ajakulu=$(echo "scale=1; $ainepunktid * 26 / $nadalad" | bc)
+ajakulu_ummardatud=$(echo "scale=0; ($ajakulu+0.9)/1" | bc) # Ümardame ülespoole
+
+# Tulemuse väljastamine
+echo "Ühe nädala eeldatav ajakulu on: $ajakulu_ummardatud tundi"
+
+
