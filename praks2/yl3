@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#tanane kuupaev
+
+echo "Today is $(date +'%A, %B %d, %Y')"
+#lisan hetkese kella
+date +"Time is %H:%M"
+
+#kalendri lisamine
+date +"Calendar of %B %Y"
+
+cal | tail -n 7
