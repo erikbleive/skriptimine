@@ -1,0 +1,14 @@
+#!/bin/bash
+# Küsime kasutajalt sisendid
+read -p "Sisesta reisijate arv: " reisijate_arv
+read -p "sisesta ühe bussi kohtade arv: " bussi_kohad
+
+#Teeme nüüd arvutuse ja ümardame üles
+
+busside_arv=$((($reisijate_arv + $bussi_kohad -1) / $bussi_kohad))
+
+echo "Vaja on $busside_arv bussi, et soidutada $reisijate_arv reisijat."
+
+
+
+
