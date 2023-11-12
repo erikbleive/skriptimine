@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#skript kontrollib, kas antud täisarv on paaritu või paaritu.
+
+#Kontrollime, kas skripti käivitati õigesti
+if [ "$#" -ne 1 ]; then
+    read -p "Sisesta täisarv: " arv
+else
+    # Võtame käsurealt sisestatud täisarvu
+    arv=$1
+fi
+
+# Kontrollime, kas sisend on täisarv
+if ! [[ "$arv" =~ ^[0-9]+$ ]]; then
+    echo "Vigane sisend! Palun sisesta ainult täisarv."
+    exit 1
+fi
+
+# Kontrollime, kas arv on paaritu või paaritu
+if ((arv % 2 == 0)); then
+    echo "Antud arv $arv on paaris."
+else
+    echo "Antud arv $arv on paaritu."
+fi
