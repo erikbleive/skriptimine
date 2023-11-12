@@ -1,0 +1,24 @@
+#!/bin/bash
+#Ülesanne 4 täiustatud et kontrolliks 20 esimese täisarvu algarvu olekut
+
+for arv in {1..20}; do
+    if [ $arv -eq 0 -o $arv -eq 1 ]; then
+        echo "$arv ei ole algarv"
+    else
+        jagaja=2
+        jaak=$(($arv % $jagaja))
+
+        # Jagame arvu järjestikuste jagajatega
+        while [ $jaak -ne 0 ]; do
+            jagaja=$(($jagaja + 1))
+            jaak=$(($arv % $jagaja))
+        done
+
+        # Kontrollime, kas jagaja on võrdne sisestatud arvuga
+        if [ $arv -eq $jagaja ]; then
+            echo "$arv on algarv"
+        else
+            echo "$arv ei ole algarv"
+        fi
+    fi
+done
